@@ -1,0 +1,26 @@
+<ul>
+	{{ with .Site.Menus.main }}
+			{{ range . }}
+				<li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
+			{{ end }}
+	{{ end }}
+	
+	{{ with .Sections }}
+        {{ range $i, $element := .ByWeight }}
+          {{if $i}}
+             <li>
+        	 <a href="#{{ .Params.anchor }}">{{ .Title }}</a>
+    		</li>
+    	  {{else}}
+             <li>
+        	 <a href="#{{ .Params.anchor }}">{{ .Title }}</a>
+    		</li>    	  
+    	  {{end}}
+        {{ end }}
+    {{ end }}
+    {{ if not .Site.Params.contact.hide }}
+		    <li>
+        	 <a href="#contact">{{ .Site.Params.contact.title }}</a>
+    		</li>
+	{{ end }}
+</ul>

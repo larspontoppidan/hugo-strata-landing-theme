@@ -8,25 +8,6 @@
 	{{ end }}
 
 		<nav id="sidebar">
-			<ul>
-	{{ with .Site.Menus.main }}
-			{{ range . }}
-				<li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
-			{{ end }}
-	{{ end }}
-	
-	{{ with .Sections }}
-        {{ range .ByWeight }}
-             <li>
-        	 <a href="#{{ .Params.anchor }}">{{ .Title }}</a>
-    		</li>
-        {{ end }}
-    {{ end }}
-    {{ if not .Site.Params.contact.hide }}
-		    <li>
-        	 <a href="#contact">{{ .Site.Params.contact.title }}</a>
-    		</li>
-	{{ end }}
-			</ul>
+			{{ partial "menu.html" . }}
 		</nav>
 </header>

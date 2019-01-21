@@ -2,7 +2,7 @@
 <section id="contact">
 	{{ if isset .Site.Params.contact "email" }}
 		{{ with .Site.Params.contact.title }}
-		<h1><a href="#contact">{{ . }}</a></h1>
+		<h1>{{ . }}</h1>
 		{{ end }}
 		{{ with .Site.Params.contact.content }}<p>{{ . | markdownify }}</p>{{ end }}
 	{{ end }}
