@@ -3,16 +3,15 @@ license = "Creative Commons Attribution 3.0 Unported"
 licenselink = "//github.com/digitalcraftsman/hugo-strata-theme/blob/master/LICENSE.md"
 description = "A responsive and minimal single-page portfolio with blogging capabilities."
 homepage = "//github.com/digitalcraftsman/hugo-strata-theme"
-tags = ["image gallery", "contact form", "google analytics", "customizable", "blog", "single-page"]
+tags = ["contact form", "google analytics", "customizable", "single-page"]
 features = []
 min_version = "0.45"
 
 [author]
-  name = "digitalcraftsman"
-  homepage = "//github.com/digitalcraftsman"
+  name = "Lars Pontoppidan"
+  homepage = "//larsee.com"
 
 # If porting an existing theme
 [original]
-  name = "AJ"
-  homepage = "//html5up.net/"
-  repo = ""
+  name = "digitalcraftsman"
+  homepage = "//github.com/digitalcraftsman"
