@@ -21,7 +21,12 @@
         	 <a href="#{{ .Params.anchor }}">{{ .Title }}</a>
     		</li>
         {{ end }}
-    {{ end }}	
+    {{ end }}
+    {{ if not .Site.Params.contact.hide }}
+		    <li>
+        	 <a href="#contact">{{ .Site.Params.contact.title }}</a>
+    		</li>
+	{{ end }}
 			</ul>
 		</nav>
 </header>
