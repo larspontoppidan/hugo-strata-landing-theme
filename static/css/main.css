@@ -1577,7 +1577,7 @@
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border: 0;
 		color: #49bf9d;
 		text-decoration: none;
 	}
@@ -2089,6 +2089,18 @@
 				width: 100%;
 			}
 
+		
+
+			.image.logo:before {
+				display: none;
+			}
+
+			.image.logo img {
+				padding: 0;
+				margin: 0;
+				width: 100%;
+			}
+			
 /* List */
 
 	ol {
@@ -2466,11 +2478,11 @@
 		background-image: url("images/overlay.png"), url("../images/bg.jpg");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
-		background-size: auto,								auto 100%;
+		background-size: auto, auto 110%;
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em 0 0;
+		padding: 8em 4em 0 2em;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2478,15 +2490,15 @@
 	}
 
 		#header strong, #header b {
-			color: #ffffff;
+			color: #404060;
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color: #404060;
 		}
 
 		#header h1 {
-			color: rgba(255, 255, 255, 0.5);
+			color: #404060;
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
@@ -2495,6 +2507,11 @@
 		#header .image.avatar {
 			margin: 0 0 1em 0;
 			width: 6.25em;
+		}
+
+		#header .image.logo {
+			margin: 0 0 1em 0;
+			width: 95%;
 		}
 
 /* Footer */
@@ -2839,6 +2856,7 @@
 				font-size: 12pt;
 			}
 
+
 	}
 
 /* Large */
@@ -2848,7 +2866,7 @@
 		/* Header */
 
 			#header {
-				padding: 6em 3em 3em 3em;
+				padding: 6em 3em 0em 2em;
 				width: 30%;
 			}
 
@@ -3136,13 +3154,13 @@
 
 	#sidebar ul li {
 		list-style: none;
-		font-size: 1.35em;
+		font-size: 1.5em;
 		line-height: 1.5em;
 	}
 
 	#sidebar ul li a,
 	#sidebar ul li a a:visited {
-		color: #a2a2a2;
+		color: #404060;
 		text-decoration: none;
 	}
 
