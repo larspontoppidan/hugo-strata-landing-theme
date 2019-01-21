@@ -4,8 +4,8 @@ licenselink = "//github.com/digitalcraftsman/hugo-strata-theme/blob/master/LICEN
 description = "A responsive and minimal single-page portfolio with blogging capabilities."
 homepage = "//github.com/digitalcraftsman/hugo-strata-theme"
 tags = ["image gallery", "contact form", "google analytics", "customizable", "blog", "single-page"]
-features = ["", ""]
-min_version = 0.16
+features = []
+min_version = "0.45"
 
 [author]
   name = "digitalcraftsman"
