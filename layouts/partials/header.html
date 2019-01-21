@@ -7,13 +7,21 @@
 		<h1>{{ . | markdownify }}</h1>
 	{{ end }}
 
-	{{ with .Site.Menus.main }}
 		<nav id="sidebar">
 			<ul>
+	{{ with .Site.Menus.main }}
 			{{ range . }}
 				<li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>
 			{{ end }}
+	{{ end }}
+	
+	{{ with .Sections }}
+        {{ range .ByWeight }}
+             <li>
+        	 <a href="#{{ .Params.anchor }}">{{ .Title }}</a>
+    		</li>
+        {{ end }}
+    {{ end }}	
 			</ul>
 		</nav>
-	{{ end }}
 </header>
