@@ -1,8 +1,11 @@
 {{ "<!-- Header -->" | safeHTML }}
 <header id="header">
-	{{ if not .Site.Params.avatar.hide }}
+	{{ if .Site.Params.sidebar.avatar }}
 	<a href="{{ .Site.BaseURL }}" class="image avatar"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.avatar }}" alt="" /></a>
+	{{ else if .Site.Params.sidebar.logo }}
+	<a href="{{ .Site.BaseURL }}" class="image logo"><img src="{{ .Site.BaseURL }}images/{{ .Site.Params.sidebar.logo }}" alt="" /></a>
 	{{ end }}
+	
 	{{ with .Site.Params.sidebar.bio }}
 		<h1>{{ . | markdownify }}</h1>
 	{{ end }}
