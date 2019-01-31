@@ -1583,8 +1583,7 @@
 	}
 
 		a:hover {
-			border-bottom-color: transparent;
-			color: #49bf9d !important;
+			color: white !important;
 			text-decoration: none;
 		}
 
