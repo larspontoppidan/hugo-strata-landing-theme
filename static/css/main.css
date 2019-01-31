@@ -2482,7 +2482,7 @@
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em 0 2em;
+		padding: 6em 4em 0 2em;
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2519,7 +2519,7 @@
 	#footer {
 		bottom: 0;
 		left: 0;
-		padding: 0 4em 6em 0;
+		padding: 0 5em 3em 0;
 		position: fixed;
 		text-align: right;
 		width: 35%;
@@ -2534,7 +2534,7 @@
 			}
 
 		#footer .copyright {
-			color: rgba(255, 255, 255, 0.4);
+			color: rgba(255, 255, 255, 0.55);
 			font-size: 0.8em;
 			list-style: none;
 			margin: 1em 0 0 0;
@@ -2564,7 +2564,7 @@
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
-		padding: 4em;
+		padding: 2em 4em 4em 4em;
 		width: calc(100% - 35%);
 	}
 
@@ -2898,7 +2898,7 @@
 			#main {
 				margin-left: 30%;
 				max-width: none;
-				padding: 6em 3em 3em 3em;
+				padding: 2em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
 
@@ -2979,7 +2979,7 @@
 
 			#main {
 				margin: 0;
-				padding: 6em 4em;
+				padding: 0em 4em;
 				width: 100%;
 			}
 
@@ -3156,11 +3156,12 @@
 		list-style: none;
 		font-size: 1.5em;
 		line-height: 1.5em;
+		text-shadow: 0px 0px 10px rgba(0,0,0,1);
 	}
 
 	#sidebar ul li a,
 	#sidebar ul li a a:visited {
-		color: #404060;
+		color: #e0e0e0;
 		text-decoration: none;
 	}
 
